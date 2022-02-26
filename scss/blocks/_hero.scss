@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+.hero {  
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  background-color: $color-white;
+}
+
+.hero__entry {
+  position: relative;
+}
+.carusel-img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+.hero__fresh {
+  position: absolute;
+  top: 129px;
+  left: 110px;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $hover-color;
+}
+.hero__title {
+  position: absolute;
+  top: 184px;
+  left: 110px;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 45px;
+  color: #0a472e;
+}
+
+
+.hero__link {
+  @include link-decoration();
+  position: absolute;
+  top: 308px;
+  left: 110px;
+  font-size: 12px;
+  font-weight: 700;
+  color: $color-text;
+  border-bottom: 2px solid $color-text;
+  transition: all 0.3s ease;
+}
+.hero__link:hover {
+  color: $hover-color;
+  transition: all 0.3s ease;
+}
+.hero__link:hover .hero__ikon {
+  transform: translateX(3px);
+  transition: all 0.3s ease;
+  color: $hover-color;
+}
+.hero__link:hover {
+  border-bottom: 2px solid $hover-color;
+}
+
+.hero__ikon {
+  position: relative;
+  left: 3px;
+  transition: all 0.3s ease;
+}
+
+.hero__caruselbtns {
+  position: absolute;
+  right: 42px;
+  bottom: 42px;
+}
+
+.carusel-ikon {
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background-color: $color-white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.hero__caruselbtn {
+  background-color: transparent;
+  border: none;
+}
+.carusel-ikon:hover {
+  background-color: $hover-color;
+  transition: all 0.3s ease;
+}  
+.hero__real {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.hero__box {
+  position: absolute;
+  top: 15%;
+  left: 45px;
+}
+.hero__img {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+}
+
+.hero__discover {
+  font-size: 24px;
+  line-height: 30px;
+  color: #0a472e;
+  margin-bottom: 110px;
+}
+.hero__discoverlink {
+  position: absolute;
+  @include link-decoration();
+  font-size: 12px;
+  font-weight: 700;
+  color: $color-text;
+  border-bottom: 2px solid $color-text;
+  transition: all 0.3s ease;
+}
+.hero__discoverlink:hover {
+  color: $hover-color;
+  transition: all 0.3s ease;
+}
+.hero__discoverlink:hover .hero__ikon {
+  transform: translateX(3px);
+  transition: all 0.3s ease;
+  color: $hover-color;
+}
+.hero__discoverlink:hover {
+  border-bottom: 2px solid $hover-color;
+}
+
+.hero__ikon {
+  position: relative;
+  left: 3px;
+  transition: all 0.3s ease;
+}
+
+.hero__real:nth-child(2) {
+  position: relative;
+}
+.hero__sale {
+  position: absolute;
+  top: 20%;
+  left: 80px;
+}
+.hero__summer {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 24px;
+  color: $color-white;
+  margin-bottom: 15px;
+}
+.hero__percent {
+  font-size: 40px;
+  color: #f4ed23;
+  margin-bottom: 10px;
+}
+.hero__text {
+  color: $color-white;
+  margin-bottom: 20px;
+}
+.hero__btn {
+  padding: 12px 29px 9px 29px;
+  font-size: 12px;
+  font-weight: 700;
+  color: $color-white;
+  background-color: $hover-color;
+  border-radius: 30px;
+  display: inline-block;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.hero__btn:hover {
+  background-color: $color-white;
+  color: $hover-color;
+  transition: all 0.3s ease;
+}
+
+.hero__btn:hover .hero__ikon {
+  transform: translateX(3px);
+  transition: all 0.3s ease;
+}
+
+.hero__shopify {
+  width: 62px;
+  height: 64px;
+  object-fit: cover;
+}
+.hero__product {
+  padding-left: 15px;
+}
+
+.hero__heading {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #0a472e;
+}
+.hero__desc {
+  font-size: 12px;
+  color: #555;
+  width: 173px;
+  line-height: 18px;
+}
+
+.hero__info {
+  padding: 50px 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.hero__shop {
+  width: 300px;
+  position: relative;
+}
+
+.hero__shop::before {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  display: inline-block;
+  opacity: 0;
+  width: 0;
+  height: 3px;
+  background-color: #0a472e;
+  transition: all 0.3s ease;
+}
+
+.hero__shop:hover::before {
+  opacity: 1;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 992px) {
+  .hero__inner {
+    flex-direction: column;
+  }
+  .hero__boxing {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+    padding-left: 0 !important;
+  }
+  .hero__img {
+    height: auto
+  }
+
+  .hero__info {
+    flex-wrap: wrap;
+  }
+  .hero__shop {
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  .hero__boxing {
+    flex-direction: column;
+  }
+  .carusel-img {
+    width: 100%;
+    height: auto;
+  }
+  .hero__discover {
+    margin-bottom: 50px;
+  }
+  .hero__img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  .hero__sale {
+    top: 10%;
+    left: 30%;
+  }
+  .hero__fresh {
+    left: 50px;
+  }
+  .hero__title {
+    left: 50px;
+    font-size: 30px;
+  }
+  .hero__link {
+    left: 50px;
+  }
+  .hero__caruselbtns {
+    bottom: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero__fresh {
+    top: 100px;
+  }
+  .hero__title {
+    top: 150px;
+    font-size: 25px;
+  }
+  .hero__link {
+    top: 250px;
+  }
+  .hero__sale {
+    left: 25%;
+  }
+  .carusel-ikon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero__fresh {
+    top: 70px;
+    left: 40px;
+  }
+  .hero__title {
+    top: 110px;
+    left: 40px;
+    font-size: 25px;
+  }
+  .hero__link {
+    top: 220px;
+    left: 40px;
+  }
+  .hero__sale {
+    left: 15%;
+  }
+}

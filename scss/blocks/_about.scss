@@ -1,0 +1,51 @@
+.about {
+  background-color: $color-white;
+}
+.about__container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.about__title {
+  font-size: 28px;
+  font-weight: 400;
+  color: #0a472e;
+}
+.about__entry {
+  padding: 1.25rem;
+  text-align: justify;
+}
+.about__info {
+  padding-top: 50px;
+}
+.about__list {
+  @include list-unstyled();
+}
+.about__item {
+  padding: 0 20px;
+}
+.about__desc {
+  font-size: 18px;
+  color: #0a472e;
+}
+.abouts__strong {
+  font-size: 14px;
+  color: #aaa;
+}
+.about__text {
+  font-size: 14px;
+  color: #aaa;
+  font-weight: 400;
+  margin: 16px 0;  
+}
+.about__quality {
+  @include list-unstyled();
+}
+
+
+.quality__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #aaa;
+  margin-bottom: 0;
+}
+

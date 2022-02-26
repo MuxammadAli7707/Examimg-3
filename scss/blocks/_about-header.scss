@@ -1,0 +1,132 @@
+.header {
+  background-color: $color-white;
+}
+.header__about {
+  padding: 25px 20px;
+}
+.header__img {
+  margin-right: 50px;
+  object-fit: cover;
+  width: 36px;
+  height: 36px;
+}
+.header__title {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.header__number {
+  @include link-decoration();
+  color: $hover-color;
+  font-size: 18px;
+  font-weight: 400
+}
+
+
+.header__drops {
+  width: 100%;
+  background-color: #0a472e;
+}
+.header__container {
+  margin: 0 auto;
+  max-width: 1320px;
+}
+.dropdown {
+  padding: 16px 30px;
+  color: $color-white;
+  background-color: $hover-color;
+  border-radius: 30px;
+}
+.dropdown::after {
+  display: none;
+}
+.nav__drop {
+  position: absolute;
+  top: 24%;
+  display: none;
+  @include list-unstyled();
+  width: 185px;
+  padding: 20px;
+  color: #000;
+  background-color: $color-white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: -1;
+  animation: nav-drop 0.3s linear alternate;
+}
+@keyframes nav-drop {
+  0% {
+    top: 28%;
+  }
+  100% {
+    top: 24%;
+  }
+}
+
+.nav__item:nth-child(1):hover .nav__drop {
+  display: block;
+  top: 24%;
+  z-index: 10;
+}
+
+.nav__dropbox {
+  position: absolute;
+  top: 24%;
+  display: none;
+  width: 100%;
+  max-width: 60%;
+  right: 10%;
+  padding: 20px;
+  background-color: $color-white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  animation: nav-dropbox 0.3s linear alternate;
+}
+
+.nav__item:nth-child(2):hover .nav__dropbox {
+  display: block;
+  display: flex;
+  z-index: 10;
+}
+
+@keyframes nav-dropbox {
+  0% {
+    top: 28%;
+  }
+  100% {
+    top: 28%;
+  }
+}
+
+.nav__dropimgs {
+  position: absolute;
+  top: 24%;
+  right: 10%;
+  width: 100%;
+  max-width: 60%;
+  padding: 20px;
+  background-color: $color-white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  animation: nav-dropbox 0.3s linear alternate;
+  display: none;
+}
+
+.nav__item:nth-child(3):hover .nav__dropimgs {
+  display: block;
+  display: flex;
+  z-index: 10;
+}
+@keyframes nav-dropbox {
+  0% {
+    top: 28%;
+  }
+  100% {
+    top: 24%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header__call {
+    display: none !important;
+  }
+}

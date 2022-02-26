@@ -1,27 +1,2012 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/flexboxgrid.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
-    <link rel="stylesheet" href="css/main.min.css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freshio</title>
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link rel="stylesheet" href="css/main.min.css" />
+</head>
 
-    <section>
-      
+<body>
+  <div class="free">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <p class="free__text">FREE express international delivery + EASY returns</p>
+        <ul class="free__list d-flex align-items-center text-uppercase">
+          <li class="free__item">
+            <a class="free__link" href="about.html">about</a>
+          </li>
+          <li class="free__item">
+            <a class="free__link" href="#">faq</a>
+          </li>
+          <li class="free__item">
+            <a class="free__link" href="#">contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section id="header" class="header">
+    <header class="header__inner">
+      <div class="container">
+        <div class="header__entry d-flex align-items-center justify-content-between">
+          <button class="header__menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample1"
+            aria-controls="offcanvasExample">
+            <i class='bx bx-menu header__show'></i>
+          </button>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample1"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="offcanvas__close" data-bs-dismiss="offcanvas" aria-label="Close">x
+                Close</button>
+            </div>
+            <div class="offcanvas-body menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a id="openhome" class="menu__link d-flex align-items-center justify-content-between" href="#">home <i
+                      class="fal fa-angle-double-right menu__ikon"></i></a>
+                </li>
+                <div id="sidebar" class="menu__box homing">
+                  <button id="backhome" type="button" class="offcanvas__back">
+                    <i class="fal fa-angle-double-left"></i>
+                    Back to home</button>
+                  <div class="offcanvas-body enter">
+                    <ul class="enter__list">
+                      <li class="enter__item">
+                        <a class="enter__link text-capitalize" href="#">home 1</a>
+                      </li>
+                      <li class="enter__item">
+                        <a class="enter__link text-capitalize" href="#">home 2</a>
+                      </li>
+                      <li class="enter__item">
+                        <a class="enter__link text-capitalize" href="#">home 3</a>
+                      </li>
+                      <li class="enter__item">
+                        <a class="enter__link text-capitalize" href="#">home 4</a>
+                      </li>
+                      <li class="enter__item">
+                        <a class="enter__link text-capitalize" href="#">home 5</a>
+                      </li>
+                      <li class="enter__item">
+                        <a class="enter__link text-capitalize" href="#">home 6</a>
+                      </li>
+                      <li class="enter__item">
+                        <a class="enter__link text-capitalize" href="#">home 7</a>
+                      </li>
+                      <li class="enter__item">
+                        <a class="enter__link text-capitalize" href="#">home 8</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <li class="menu__item">
+                  <a id="openshop" class="menu__link d-flex align-items-center justify-content-between" href="#">shop <i
+                      class="fal fa-angle-double-right"></i></a>
+                </li>
+                <div id="shop" class="menu__box homing">
+                  <button id="backshop" type="button" class="offcanvas__back">
+                    <i class="fal fa-angle-double-left"></i>
+                    Back to home
+                  </button>
+                  <div class="offcanvas-body categry">
+                    <ul class="categry__list">
+                      <li class="categry__item d-flex align-items-center justify-content-between">
+                        <a class="categry__link text-capitalize" href="#">categories 1</a>
+                        <i class='  bx bx-chevrons-down'></i>
+                      </li>
+                      <li class="categry__item d-flex align-items-center justify-content-between">
+                        <a class="categry__link text-capitalize" href="#">categories 2</a>
+                        <i class='  bx bx-chevrons-down'></i>
+                      </li>
+                      <li class="categry__item d-flex align-items-center justify-content-between">
+                        <a class="categry__link text-capitalize" href="#">categories 3</a>
+                        <i class='  bx bx-chevrons-down'></i>
+                      </li>
+                      <li class="categry__item d-flex align-items-center justify-content-between">
+                        <a class="categry__link text-capitalize" href="#">categories 4</a>
+                        <i class='  bx bx-chevrons-down'></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <li class="menu__item">
+                  <a id="openpage" class="menu__link d-flex align-items-center justify-content-between" href="#">pages
+                    <i class="fal fa-angle-double-right" type="button"></i></a>
+                </li>
+                <div id="page" class="menu__box homing">
+                  <button id="backpage" type="button" class="offcanvas__back"><i class="fal fa-angle-double-left"></i> Back to home
+                  </button>
+                    
+                  <div class="offcanvas-body canvas">
+                    <ul class="canvas__list">
+                      <li class="canvas__item">
+                        <a href="#">
+                          <img class="canvas__img"
+                            src="https://i.pinimg.com/originals/8c/16/f9/8c16f9f024af16977adc1f618872eb8b.jpg"
+                            alt="offcanvas__img">
+                        </a>
+                      </li>
+                      <li class="canvas__item">
+                        <a href="#">
+                          <img class="canvas__img"
+                            src="https://i.pinimg.com/originals/8c/16/f9/8c16f9f024af16977adc1f618872eb8b.jpg"
+                            alt="offcanvas__img">
+                        </a>
+                      </li>
+                      <li class="canvas__item">
+                        <a href="#">
+                          <img class="canvas__img"
+                            src="https://i.pinimg.com/originals/8c/16/f9/8c16f9f024af16977adc1f618872eb8b.jpg"
+                            alt="offcanvas__img">
+                        </a>
+                      </li>
+                      <li class="canvas__item">
+                        <a href="#">
+                          <img class="canvas__img"
+                            src="https://i.pinimg.com/originals/8c/16/f9/8c16f9f024af16977adc1f618872eb8b.jpg"
+                            alt="offcanvas__img">
+                        </a>
+                      </li>
+                      <li class="canvas__item">
+                        <a href="#">
+                          <img class="canvas__img"
+                            src="https://i.pinimg.com/originals/8c/16/f9/8c16f9f024af16977adc1f618872eb8b.jpg"
+                            alt="offcanvas__img">
+                        </a>
+                      </li>
+                      <li class="canvas__item">
+                        <a href="#">
+                          <img class="canvas__img"
+                            src="https://i.pinimg.com/originals/8c/16/f9/8c16f9f024af16977adc1f618872eb8b.jpg"
+                            alt="offcanvas__img">
+                        </a>
+                      </li>
+                      <li class="canvas__item">
+                        <a href="#">
+                          <img class="canvas__img"
+                            src="https://i.pinimg.com/originals/8c/16/f9/8c16f9f024af16977adc1f618872eb8b.jpg"
+                            alt="offcanvas__img">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <li class=" menu__item">
+                  <a class="menu__link" href="#">blog</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="header__logo-box">
+            <a href="index.html">
+              <img class="header__logo"
+                src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/img/freshio-logo-1603358296.jpg"
+                alt="header__logo">
+            </a>
+          </div>
+          <div class="header__form">
+            <div class="header__wrapper d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <i class='bx bx-search'></i>
+                <input class="header__input" type="text" name="text" id="text" placeholder="Enter Keyword...">
+              </div>
+              <button class="header__search">search</button>
+            </div>
+          </div>
+          <ul class="header__icons d-flex align-items-center">
+            <li class="header__canvas">
+              <button class="header__icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"><i class='header__bx bx bx-user'></i></button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <a href="#">
+                    <img class="header__logo"
+                      src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/img/freshio-logo-1603358296.jpg"
+                      alt="header__logo">
+                  </a>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <h3 class="offcanvas__inner text-capitalize">existing account login</h3>
+                  <form class="offcanvas__form" action="#">
+                    <label for="inputPassword2" class="visually-hidden">email</label>
+                    <input type="email" class="form-control offcanvas__input text-capitalize" id="inputPassword2"
+                      placeholder="email address" required>
+                    <div class="offcanvas__password">
+                      <input type="password" class="form-control offcanvas__input" id="inputPassword2"
+                        placeholder="Password" required>
+                      <img class="offcanvas__keys" src="images/offcanvas-keys.svg" alt="offcanvas-keys" width="27"
+                        height="27">
+                    </div>
+                    <div class="offcanvas__check d-flex align-items-center">
+                      <input type="checkbox" id="checkbox" name="checkbox">
+                      <span class="offcanvas__remember">Remember Me</span>
+                      <a class="offcanvas__forget text-decoration-none" href="#">Forgot Password ?</a>
+                    </div>
+                    <button type="submit" class="offcanvas__btn text-capitalize">login</button>
+                  </form>
+                  <h3 class="offcanvas__connect text-capitalize">connect with social network</h3>
+                  <ul class="offcanvas__list">
+                    <li class="offcanvas__item">
+                      <a href="#"><i class='offcanvas__bx bx bxl-facebook facebook'></i></a>
+                    </li>
+                    <li class="offcanvas__item">
+                      <a href="#"><i class='offcanvas__bx bx bxl-google google'></i></a>
+                    </li>
+                    <li class="offcanvas__item">
+                      <a href="#"><i class='offcanvas__bx bx bxl-twitter twit'></i></a>
+                    </li>
+                  </ul>
+                  <h3 class="offcanvas__account text-capitalize">new account register</h3>
+                  <form class="offcanvas__form" action="#">
+                    <input type="text" class="form-control offcanvas__input text-capitalize" id="text"
+                      placeholder="first name" required>
+                    <input type="text" class="form-control offcanvas__input text-capitalize" id="text"
+                      placeholder="last name" required>
+                    <input type="email" class="form-control offcanvas__input text-capitalize" id="inputPassword2"
+                      placeholder="email address" required>
+                    <div class="offcanvas__password">
+                      <input type="password" class="form-control offcanvas__input" id="inputPassword2"
+                        placeholder="Password" required>
+                      <img class="offcanvas__keys" src="images/offcanvas-keys.svg" alt="offcanvas-keys" width="27"
+                        height="27">
+                    </div>
+                    <div class="offcanvas__check d-flex align-items-center">
+                      <input type="checkbox" id="checkbox" name="checkbox">
+                      <span class="offcanvas__remember">I agree to the terms</span>
+                    </div>
+                    <button type="submit" class="offcanvas__btn text-capitalize">create an account</button>
+                  </form>
+                  <div class="offcanvas__box d-flex col-12">
+                    <div class="col-lg-4">
+                      <h4 class="offcanvas__lang text-capitalize">language:</h4>
+                      <ul class="offcanvas__flags d-flex align-items-center flex-wrap">
+                        <li class="offcanvas__flag">
+                          <a href="#">
+                            <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="flag">
+                          </a>
+                        </li>
+                        <li class="offcanvas__flag">
+                          <a href="#">
+                            <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/2.jpg" alt="flag">
+                          </a>
+                        </li>
+                        <li class="offcanvas__flag">
+                          <a href="#">
+                            <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/3.jpg" alt="flag">
+                          </a>
+                        </li>
+                        <li class="offcanvas__flag">
+                          <a href="#">
+                            <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/4.jpg" alt="flag">
+                          </a>
+                        </li>
+                        <li class="offcanvas__flag">
+                          <a href="#">
+                            <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/5.jpg" alt="flag">
+                          </a>
+                        </li>
+                        <li class="offcanvas__flag">
+                          <a href="#">
+                            <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/6.jpg" alt="flag">
+                          </a>
+                        </li>
+                      </ul>
+                      <h4 class="offcanvas__lang text-capitalize">currency:</h4>
+                      <ul class="offcanvas__valyutes d-flex align-items-center">
+                        <li class="offcanvas__valyute text-uppercase">
+                          <a class="offcanvas__cash" href="#">eur</a>
+                        </li>
+                        <li class="offcanvas__valyute text-uppercase">
+                          <a class="offcanvas__cash offcanvas__cash--active" href="#">usd</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-8">
+                      <ul class="offcanvas__socials">
+                        <li class="offcanvas__social">
+                          <a class="offcanvas__sociall d-flex align-items-center" href="#">
+                            <i class='offcanvas__ikon bx bx-right-arrow-circle'></i>
+                            Sign in
+                          </a>
+                        </li>
+                        <li class="offcanvas__social">
+                          <a class="offcanvas__sociall d-flex align-items-center" href="#">
+                            <i class='offcanvas__ikon bx bx-user'></i>
+                            My account
+                          </a>
+                        </li>
+                        <li class="offcanvas__social">
+                          <a class="offcanvas__sociall d-flex align-items-center" href="#">
+                            <i class='offcanvas__ikon bx bx-heart'></i>
+                            Wishlist (0)
+                          </a>
+                        </li>
+                        <li class="offcanvas__social">
+                          <a class="offcanvas__sociall d-flex align-items-center" href="#">
+                            <i class='offcanvas__ikon bx bx-outline'></i>
+                            Compare (0)
+                          </a>
+                        </li>
+                        <li class="offcanvas__social">
+                          <a class="offcanvas__sociall d-flex align-items-center" href="#">
+                            <i class='offcanvas__ikon bx bx-check-square'></i>
+                            Checkout
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="header__icon">
+              <i class='header__bx bx bx-heart'></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                0
+              </span>
+            </li>
+            <li class="header__icon">
+              <i class='header__bx bx bx-basket'></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                0
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__drop drop">
+          <div class="drop__inner d-flex align-items-center">
+            <div class="dropdown">
+              <button class="drop__btn d-flex align-items-center dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class='bx bx-menu'></i>
+                Shop by Departament
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li class="dropdown-items">
+                  <a class="dropdown-item d-flex align-items-center" href="#"><i
+                      class="fal dropdown__ikon fa-salad"></i>Fruits & Vegetables</a>
+                </li>
+                <li class="dropdown-items hov d-flex align-items-center justify-content-between">
+                  <a class="dropdown-item d-flex align-items-center" href="#"><i
+                      class="dropdown__ikon fal fa-meat"></i>Supplyments</a>
+                  <i class='bx bx-chevron-right'></i>
+                  <ul class="dropdown__list down">
+                    <li class="down__item">
+                      <a class="down__link text-capitalize" href="#">vegetables</a>
+                    </li>
+                    <li class="down__item">
+                      <a class="down__link text-capitalize" href="#">fresh & meat</a>
+                    </li>
+                    <li class="down__item">
+                      <a class="down__link text-capitalize" href="#">fruit & nut gifts</a>
+                    </li>
+                    <li class="down__item">
+                      <a class="down__link text-capitalize" href="#">fresh & berries</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-items d-flex align-items-center justify-content-between">
+                  <a class="dropdown-item d-flex align-items-center" href="#"><i
+                      class="fal fa-egg-fried dropdown__ikon"></i>Diary Bread &
+                    Eggs</a>
+                  <i class='bx bx-chevron-right'></i>
+                  <ul class="dropdown__second down">
+                    <li class="down__item">
+                      <a class="down__link text-capitalize" href="#">egg sandwich</a>
+                    </li>
+                    <li class="down__item">
+                      <a class="down__link" href="#">Easter bread</a>
+                    </li>
+                    <li class="down__item">
+                      <a class="down__link" href="#">Portuguese sweet bread</a>
+                    </li>
+                    <li class="down__item">
+                      <a class="down__link text-capitalize" href="#">challah</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-items">
+                  <a class="dropdown-item d-flex align-items-center" href="#"><i
+                      class="fal fa-pizza-slice dropdown__ikon"></i>Package Foods</a>
+                </li>
+                <li class="dropdown-items d-flex align-items-center justify-content-between">
+                  <a class="dropdown-item d-flex align-items-center" href="#"><i
+                      class="fal fa-apple-alt dropdown__ikon"></i>Beauty &
+                    Care</a>
+                  <i class='bx bx-chevron-right'></i>
+                  <ul class="dropdown__third down">
+                    <li class="down__item">
+                      <a class="down__link text-capitalize" href="#">challah</a>
+                    </li>
+                    <li class="down__item">
+                      <a class="down__link text-capitalize" href="#">fat freezing</a>
+                    </li>
+                    <li class="down__item">
+                      <a class="down__link text-capitalize" href="#">skin resurfacing</a>
+                    </li>
+                    <li class="down__item">
+                      <a class="down__link text-capitalize" href="#">eyelash extentions</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-items">
+                  <a class="dropdown-item d-flex align-items-center" href="#"><i
+                      class="fal fa-volleyball-ball dropdown__ikon"></i>Health & Wellness</a>
+                </li>
+                <li class="dropdown-items">
+                  <a class="dropdown-item d-flex align-items-center" href="#"><i
+                      class="fal fa-ice-cream dropdown__ikon"></i>Baby & Infants</a>
+                </li>
+                <li class="dropdown-items">
+                  <a class="dropdown-item d-flex align-items-center" href="#"><i
+                      class="fal fa-leaf  dropdown__ikon"></i>Home Care</a>
+                </li>
+                <li class="dropdown-items">
+                  <a class="dropdown-item d-flex align-items-center" href="#"><i
+                      class="fal fa-badge-percent dropdown__ikon"></i>Hot Offers</a>
+                </li>
+              </ul>
+            </div>
+
+            <nav class="header__nav nav">
+              <ul class="nav__list d-flex align-items-center">
+                <li class="nav__item d-flex align-items-center">
+                  <a class="nav__link text-capitalize text-decoration-none" href="#">home</a>
+                  <i class='bx bx-chevron-down'></i>
+                  <ul class="nav__drop">
+                    <li class="nav__dropitem">
+                      <a class="nav__droplink" href="#">home 1</a>
+                    </li>
+                    <li class="nav__dropitem">
+                      <a class="nav__droplink" href="#">home 2</a>
+                    </li>
+                    <li class="nav__dropitem">
+                      <a class="nav__droplink" href="#">home 3</a>
+                    </li>
+                    <li class="nav__dropitem">
+                      <a class="nav__droplink" href="#">home 4</a>
+                    </li>
+                    <li class="nav__dropitem">
+                      <a class="nav__droplink" href="#">home 5</a>
+                    </li>
+                    <li class="nav__dropitem">
+                      <a class="nav__droplink" href="#">home 6</a>
+                    </li>
+                    <li class="nav__dropitem">
+                      <a class="nav__droplink" href="#">home 7</a>
+                    </li>
+                    <li class="nav__dropitem">
+                      <a class="nav__droplink" href="#">home 8</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item d-flex align-items-center">
+                  <a class="nav__link text-capitalize text-decoration-none" href="#">shop</a>
+                  <i class='bx bx-chevron-down'></i>
+                  <div class="nav__dropbox">
+                    <ul class="nav__category">
+                      <a class="nav__categorymain text-capitalize" href="#">categories 1</a>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">vegetable</a>
+                      </li>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">tomato</a>
+                      </li>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">cabbage</a>
+                      </li>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">juice</a>
+                      </li>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">meat</a>
+                      </li>
+                    </ul>
+                    <ul class="nav__category">
+                      <a class="nav__categorymain text-capitalize" href="#">categories 2</a>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">beef</a>
+                      </li>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">park</a>
+                      </li>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">conconut</a>
+                      </li>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">broccoli</a>
+                      </li>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">fish</a>
+                      </li>
+                    </ul>
+                    <ul class="nav__category">
+                      <a class="nav__categorymain text-capitalize" href="#">categories 3</a>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">seafood</a>
+                      </li>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">octopus</a>
+                      </li>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">fish</a>
+                      </li>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">park</a>
+                      </li>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">more</a>
+                      </li>
+                    </ul>
+                    <ul class="nav__category">
+                      <a class="nav__categorymain text-capitalize" href="#">categories 4</a>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">vegetables</a>
+                      </li>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">fresh & meat</a>
+                      </li>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">fruit & nut gifts</a>
+                      </li>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">fresh berries</a>
+                      </li>
+                      <li class="nav__categoryitem">
+                        <a class="nav__categorylink text-capitalize" href="#">fat freezing</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav__item d-flex align-items-center">
+                  <a class="nav__link text-capitalize text-decoration-none" href="#">pages</a>
+                  <i class='bx bx-chevron-down'></i>
+                  <ul class="nav__dropimgs">
+                    <li class="nav__dropimgitem">
+                      <a class="nav__imglink" href="#"></a>
+                    </li>
+                    <li class="nav__dropimgitem">
+                      <a class="nav__imglink" href="#"></a>
+                    </li>
+                    <li class="nav__dropimgitem">
+                      <a class="nav__imglink" href="#"></a>
+                    </li>
+                    <li class="nav__dropimgitem">
+                      <a class="nav__imglink" href="#"></a>
+                    </li>
+                    <li class="nav__dropimgitem">
+                      <a class="nav__imglink nav__imglink--small" href="#"></a>
+                    </li>
+                    <li class="nav__dropimgitem">
+                      <a class="nav__imglink nav__imglink--large" href="#"></a>
+                    </li>
+                    <li class="nav__dropimgitem">
+                      <a class="nav__imglink  nav__imglink--large" href="#"></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link text-capitalize text-decoration-none" href="#">blog</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link text-capitalize text-decoration-none" href="#">contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero__inner d-flex col-12">
+        <div class="hero__entry col-lg-8">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2-slide1.jpg?v=1614305184"
+                  class="carusel-img" alt="carousel-img">
+                  <div class="hero__show">
+                    <span class="hero__fresh animate-animated animate__lightSpeedInRight" style="animation-duration: 1s">Fresh and Tasty</span>
+                    <h2 class="hero__title animate-animated animate__lightSpeedInLeft" style="animation-duration: 1s">Farm Market <br> Organic Shop</h2>
+                    <a class="hero__link text-capitalize d-flex align-items-center" href="#">show now <i
+                      class="fal fa-angle-double-right hero__ikon"></i>
+                    </a>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2-slide2.jpg?v=1614305184"
+                  class="carusel-img" alt="carousel-img">
+                  <div class="hero__show">
+                    <span class="hero__fresh">Fresh and Tasty</span>
+                    <h2 class="hero__title">Farm Market <br> Organic Shop</h2>
+                    <a class="hero__link text-capitalize d-flex align-items-center" href="#">show now <i
+                      class="fal fa-angle-double-right hero__ikon"></i>
+                    </a>
+                  </div>
+              </div>
+            </div>
+            <div class="hero__caruselbtns">
+              <button class="hero__caruselbtn">
+                <i class='carusel-ikon bx bx-left-arrow-alt' type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev"></i>
+              </button>
+              <button class="hero__caruselbtn">
+                <i class='carusel-ikon bx bx-right-arrow-alt' type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hero__boxing ps-3 col-md-12 col-lg-4">
+          <div class="hero__real">
+            <img class="hero__img"
+              src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2-bn1.jpg?v=1614307028"
+              alt="hero__real-img">
+            <div class="hero__box">
+              <h3 class="hero__discover">Discover<br>Real Organic<br>Flavors</h3>
+              <a class="hero__discoverlink text-capitalize d-flex align-items-center" href="#">show now <i
+                  class="fal fa-angle-double-right hero__ikon"></i></a>
+            </div>
+          </div>
+          <div class="hero__real text-center">
+            <img class="hero__img"
+              src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2-bn2.jpg?v=1614307028" alt="hero-sale">
+            <div class="hero__sale">
+              <h4 class="hero__summer">Summer Sale</h4>
+              <h2 class="hero__percent text-capitalize">50% off</h2>
+              <p class="hero__text">Vitamins, Supplements and Herbs</p>
+              <button class="hero__btn text-capitalize" type="submit">
+                show now <i class="fal fa-angle-double-right hero__ikon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__info d-flex justify-content-between">
+        <div class="hero__shop d-flex">
+          <img class="hero__shopify"
+            src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h1_service_1.png?v=1604626519"
+            alt="hero__info-img">
+          <div class="hero__product">
+            <h3 class="hero__heading">Curated Products</h3>
+            <p class="hero__desc">from Handpicked Sellers</p>
+          </div>
+        </div>
+        <div class="hero__shop d-flex">
+          <img class="hero__shopify"
+            src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h1_service_2.png?v=1604626519"
+            alt="hero__info-img">
+          <div class="hero__product">
+            <h3 class="hero__heading">Handmade</h3>
+            <p class="hero__desc">Made with passion by 300+ curators across the country.</p>
+          </div>
+        </div>
+        <div class="hero__shop d-flex">
+          <img class="hero__shopify"
+            src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h1_service_3.png?v=1604626519"
+            alt="hero__info-img">
+          <div class="hero__product">
+            <h3 class="hero__heading">100% Natural</h3>
+            <p class="hero__desc">Eat local, consume local, closer to nature.</p>
+          </div>
+        </div>
+        <div class="hero__shop d-flex">
+          <img class="hero__shopify"
+            src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h1_service_4.png?v=1604626519"
+            alt="hero__info-img">
+          <div class="hero__product">
+            <h3 class="hero__heading">Shipping</h3>
+            <p class="hero__desc">Across West &amp; East India</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="product" class="product">
+      <div class="container">
+        <div class="product__info d-flex align-items-center justify-content-between">
+          <h3 class="product__title text-capitalize">featured products</h3>
+          <a class="product__link text-capitalize" href="#">shop all <i class="fa fa-angle-double-right product__icon"
+              aria-hidden="true"></i></a>
+        </div>
+        <ul class="product__list pro col-12 d-flex">
+          <li class="pro__iteam col-lg-3">
+            <div class="pro__item">
+              <div class="pro__box">
+                <img
+                  src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/36-home_default/mug-today-is-a-good-day.jpg"
+                  alt="product-img">
+                <ul class="pro__list d-flex align-items-center justify-content-center">
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <i class='pro__bx bx bx-low-vision'></i>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content pro__modal">
+                          <div class="modal-header modal__header">
+                            <button type="button" class="btn-close modal__close" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="d-flex">
+                              <img class="modal__img"
+                                src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-large_default/mountain-fox-cushion.jpg"
+                                alt="modal-img" width="370" height="320">
+                              <img class="modal__small ms-3"
+                                src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-home_default/mountain-fox-cushion.jpg"
+                                alt="modal-img">
+                              <div class=" modal__info ms4">
+                                <h4 class="modal__desc m-0 p-0">PAMELA'S PRODUCTS ARTISAN BLEND FLOUR GLUTEN FREE</h4>
+                                <span class="modal__price d-inline-block">$11.90</span>
+                                <p class="modal__desc">White Ceramic Mug. 325ml</p>
+
+                                <input class="modal__input" type="number" name="number" placeholder="1">
+                                <a class="modal__link text-uppercase" href="#">add to card</a>
+                                <div class="modal__links d-flex">
+                                  <a class="modal__wish d-flex align-items-center" href="#"><i
+                                      class='bx modal__icon bx-heart'></i> Add to wishlist</a>
+                                  <a class="modal__wish d-flex align-items-center" href="#"><i
+                                      class='bx modal__icon bx-share-alt me-2'></i> Add to wishlist</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <ul class="modal__list">
+                              <li class="modal__item d-flex align-items-center">
+                                <h5 class="modal__share text-uppercase">share:</h5>
+                                <a href="#"><i class='bx modal__social bxl-facebook'></i></a>
+                                <a href="#"><i class='bx modal__social modal__social--second bxl-twitter'></i></a>
+                                <a href="#"><i class='bx modal__social modal__social--third bxl-pinterest-alt'></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </li>
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                      <i class='pro__bx bx bx-heart'></i>
+                    </button>
+                    <div class=" modal fade" id="exampleModalToggle" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header d-flex align-items-center">
+                            <p class="p-0 m-0 modal-text">You must be logged in to manage your wishlist</p>
+                            <button type="button" class="btn-close modal-ikon" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                      <i class='pro__bx bx bx-share-alt'></i>
+                    </button>
+                    <div class=" modal fade" id="exampleModalToggle" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header d-flex align-items-center">
+                            <p class="p-0 m-0 modal-text">You must be logged in to manage your wishlist</p>
+                            <button type="button" class="btn-close modal-ikon" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="pro__entry">
+                <span class="pro__home text-capitalize">home</span>
+                <h3 class="pro__title">
+                  <a class="pro__link" href="#">Grassfed Organic Turmeric Superghee</a>
+                </h3>
+                <span class="pro__coast">$22.00</span>
+                <span class="pro__line"></span>
+                <a class="pro__add text-uppercase" href="#">add to cart <i class="fa fa-angle-double-right pro__icon"
+                    aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="pro__iteam col-lg-3">
+            <div class="pro__item">
+              <div class="pro__box">
+                <img
+                  src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/35-home_default/mug-the-adventure-begins.jpg"
+                  alt="product-img">
+                <ul class="pro__list d-flex align-items-center justify-content-center">
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <i class='pro__bx bx bx-low-vision'></i>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content pro__modal">
+                          <div class="modal-header modal__header">
+                            <button type="button" class="btn-close modal__close" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="d-flex">
+                              <img class="modal__img"
+                                src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-large_default/mountain-fox-cushion.jpg"
+                                alt="modal-img" width="370" height="320">
+                              <img class="modal__small ms-3"
+                                src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-home_default/mountain-fox-cushion.jpg"
+                                alt="modal-img">
+                              <div class=" modal__info ms4">
+                                <h4 class="modal__desc m-0 p-0">PAMELA'S PRODUCTS ARTISAN BLEND FLOUR GLUTEN FREE</h4>
+                                <span class="modal__price d-inline-block">$11.90</span>
+                                <p class="modal__desc">White Ceramic Mug. 325ml</p>
+
+                                <input class="modal__input" type="number" name="number" placeholder="1">
+                                <a class="modal__link text-uppercase" href="#">add to card</a>
+                                <div class="modal__links d-flex">
+                                  <a class="modal__wish d-flex align-items-center" href="#"><i
+                                      class='bx modal__icon bx-heart'></i> Add to wishlist</a>
+                                  <a class="modal__wish d-flex align-items-center" href="#"><i
+                                      class='bx modal__icon bx-share-alt me-2'></i> Add to wishlist</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <ul class="modal__list">
+                              <li class="modal__item d-flex align-items-center">
+                                <h5 class="modal__share text-uppercase">share:</h5>
+                                <a href="#"><i class='bx modal__social bxl-facebook'></i></a>
+                                <a href="#"><i class='bx modal__social modal__social--second bxl-twitter'></i></a>
+                                <a href="#"><i class='bx modal__social modal__social--third bxl-pinterest-alt'></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </li>
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                      <i class='pro__bx bx bx-heart'></i>
+                    </button>
+                    <div class=" modal fade" id="exampleModalToggle" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header d-flex align-items-center">
+                            <p class="p-0 m-0 modal-text">You must be logged in to manage your wishlist</p>
+                            <button type="button" class="btn-close modal-ikon" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                      <i class='pro__bx bx bx-share-alt'></i>
+                    </button>
+                    <div class=" modal fade" id="exampleModalToggle" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header d-flex align-items-center">
+                            <p class="p-0 m-0 modal-text">You must be logged in to manage your wishlist</p>
+                            <button type="button" class="btn-close modal-ikon" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="pro__entry">
+                <span class="pro__home text-capitalize">home</span>
+                <h3 class="pro__title">
+                  <a class="pro__link" href="#">Grassfed Organic Turmeric Superghee</a>
+                </h3>
+                <span class="pro__coast">$22.00</span>
+                <span class="pro__line"></span>
+                <a class="pro__add text-uppercase" href="#">add to cart <i class="fa fa-angle-double-right pro__icon"
+                    aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="pro__iteam col-lg-3">
+            <div class="pro__item">
+              <div class="pro__box">
+                <img
+                  src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-home_default/mountain-fox-cushion.jpg"
+                  alt="product-img">
+                <ul class="pro__list d-flex align-items-center justify-content-center">
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <i class='pro__bx bx bx-low-vision'></i>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content pro__modal">
+                          <div class="modal-header modal__header">
+                            <button type="button" class="btn-close modal__close" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="d-flex">
+                              <img class="modal__img"
+                                src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-large_default/mountain-fox-cushion.jpg"
+                                alt="modal-img" width="370" height="320">
+                              <img class="modal__small ms-3"
+                                src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-home_default/mountain-fox-cushion.jpg"
+                                alt="modal-img">
+                              <div class=" modal__info ms4">
+                                <h4 class="modal__desc m-0 p-0">PAMELA'S PRODUCTS ARTISAN BLEND FLOUR GLUTEN FREE</h4>
+                                <span class="modal__price d-inline-block">$11.90</span>
+                                <p class="modal__desc">White Ceramic Mug. 325ml</p>
+
+                                <input class="modal__input" type="number" name="number" placeholder="1">
+                                <a class="modal__link text-uppercase" href="#">add to card</a>
+                                <div class="modal__links d-flex">
+                                  <a class="modal__wish d-flex align-items-center" href="#"><i
+                                      class='bx modal__icon bx-heart'></i> Add to wishlist</a>
+                                  <a class="modal__wish d-flex align-items-center" href="#"><i
+                                      class='bx modal__icon bx-share-alt me-2'></i> Add to wishlist</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <ul class="modal__list">
+                              <li class="modal__item d-flex align-items-center">
+                                <h5 class="modal__share text-uppercase">share:</h5>
+                                <a href="#"><i class='bx modal__social bxl-facebook'></i></a>
+                                <a href="#"><i class='bx modal__social modal__social--second bxl-twitter'></i></a>
+                                <a href="#"><i class='bx modal__social modal__social--third bxl-pinterest-alt'></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </li>
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                      <i class='pro__bx bx bx-heart'></i>
+                    </button>
+                    <div class=" modal fade" id="exampleModalToggle" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header d-flex align-items-center">
+                            <p class="p-0 m-0 modal-text">You must be logged in to manage your wishlist</p>
+                            <button type="button" class="btn-close modal-ikon" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                      <i class='pro__bx bx bx-share-alt'></i>
+                    </button>
+                    <div class=" modal fade" id="exampleModalToggle" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header d-flex align-items-center">
+                            <p class="p-0 m-0 modal-text">You must be logged in to manage your wishlist</p>
+                            <button type="button" class="btn-close modal-ikon" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="pro__entry">
+                <span class="pro__home text-capitalize">home</span>
+                <h3 class="pro__title">
+                  <a class="pro__link" href="#">Grassfed Organic Turmeric Superghee</a>
+                </h3>
+                <span class="pro__coast">$22.00</span>
+                <span class="pro__line"></span>
+                <a class="pro__add text-uppercase" href="#">add to cart <i class="fa fa-angle-double-right pro__icon"
+                    aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="pro__iteam col-lg-3">
+            <div class="pro__item">
+              <div class="pro__box">
+                <img
+                  src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/32-home_default/the-adventure-begins-framed-poster.jpg"
+                  alt="product-img">
+                <ul class="pro__list d-flex align-items-center justify-content-center">
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <i class='pro__bx bx bx-low-vision'></i>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content pro__modal">
+                          <div class="modal-header modal__header">
+                            <button type="button" class="btn-close modal__close" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="d-flex">
+                              <img class="modal__img"
+                                src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-large_default/mountain-fox-cushion.jpg"
+                                alt="modal-img" width="370" height="320">
+                              <img class="modal__small ms-3"
+                                src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-home_default/mountain-fox-cushion.jpg"
+                                alt="modal-img">
+                              <div class=" modal__info ms4">
+                                <h4 class="modal__desc m-0 p-0">PAMELA'S PRODUCTS ARTISAN BLEND FLOUR GLUTEN FREE</h4>
+                                <span class="modal__price d-inline-block">$11.90</span>
+                                <p class="modal__desc">White Ceramic Mug. 325ml</p>
+
+                                <input class="modal__input" type="number" name="number" placeholder="1">
+                                <a class="modal__link text-uppercase" href="#">add to card</a>
+                                <div class="modal__links d-flex">
+                                  <a class="modal__wish d-flex align-items-center" href="#"><i
+                                      class='bx modal__icon bx-heart'></i> Add to wishlist</a>
+                                  <a class="modal__wish d-flex align-items-center" href="#"><i
+                                      class='bx modal__icon bx-share-alt me-2'></i> Add to wishlist</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <ul class="modal__list">
+                              <li class="modal__item d-flex align-items-center">
+                                <h5 class="modal__share text-uppercase">share:</h5>
+                                <a href="#"><i class='bx modal__social bxl-facebook'></i></a>
+                                <a href="#"><i class='bx modal__social modal__social--second bxl-twitter'></i></a>
+                                <a href="#"><i class='bx modal__social modal__social--third bxl-pinterest-alt'></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </li>
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                      <i class='pro__bx bx bx-heart'></i>
+                    </button>
+                    <div class=" modal fade" id="exampleModalToggle" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header d-flex align-items-center">
+                            <p class="p-0 m-0 modal-text">You must be logged in to manage your wishlist</p>
+                            <button type="button" class="btn-close modal-ikon" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                      <i class='pro__bx bx bx-share-alt'></i>
+                    </button>
+                    <div class=" modal fade" id="exampleModalToggle" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header d-flex align-items-center">
+                            <p class="p-0 m-0 modal-text">You must be logged in to manage your wishlist</p>
+                            <button type="button" class="btn-close modal-ikon" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="pro__entry">
+                <span class="pro__home text-capitalize">home</span>
+                <h3 class="pro__title">
+                  <a class="pro__link" href="#">Grassfed Organic Turmeric Superghee</a>
+                </h3>
+                <span class="pro__coast">$22.00</span>
+                <span class="pro__line"></span>
+                <a class="pro__add text-uppercase" href="#">add to cart <i class="fa fa-angle-double-right pro__icon"
+                    aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </li>
+
+          <div class="pro__arrows">
+            <button class="pro__arrow">
+              <i class='pro__left bx bx-left-arrow-alt'></i>
+            </button>
+
+            <button class="pro__arrow">
+              <i class='pro__right bx bx-right-arrow-alt'></i>
+            </button>
+          </div>
+        </ul>
+      </div>
     </section>
-    <script src="js/main.js"></script>
-  </body>
+
+    <section id="picture" class="picture">
+      <div class="container">
+        <div class="picture__inner col-12 d-flex flex-wrap">
+          <div class="picture__item col-lg-3 col-md-3 col-sm-12">
+            <div class="picture__box">
+              <a class="picture__link" href="#">
+                <img class="picture__img"
+                  src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2_bn1.jpg?v=1630122614" alt="picture">
+              </a>
+              <div class="picture__entry text-center">
+                <h3><a class="picture__link text-capitalize" href="#">fruits & <br>vegetables</a></h3>
+                <span class="picture__line"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="picture__item">
+              <div class="picture__box">
+                <a class="picture__link" href="#">
+                  <img class="picture__img"
+                    src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2_bn2.jpg?v=1630122614"
+                    alt="picture">
+                </a>
+                <div class="picture__entry picture__next text-center">
+                  <h3><a class="picture__link text-capitalize" href="#">dairy bread & <br> eggs</a></h3>
+                  <span class="picture__line"></span>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex picture__card">
+              <div class="picture__item">
+                <div class="picture__box">
+                  <a class="picture__link" href="#">
+                    <img class="picture__img"
+                      src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2_bn3.jpg?v=1630122614"
+                      alt="picture">
+                  </a>
+                  <div class="picture__food text-center">
+                    <h3><a class="picture__link text-capitalize" href="#">package<br> foods</a></h3>
+                    <span class="picture__line"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="picture__item">
+                <div class="picture__box">
+                  <a class="picture__link" href="#">
+                    <img class="picture__img"
+                      src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2_bn4.jpg?v=1630122614"
+                      alt="picture">
+                  </a>
+                  <div class="picture__food text-center">
+                    <h3><a class="picture__link text-capitalize" href="#">bevarages</a></h3>
+                    <span class="picture__line"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="picture__item col-lg-3 col-md-3 col-sm-12">
+            <div class="picture__box">
+              <a class="picture__link" href="#">
+                <img class="picture__img"
+                  src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2_bn5.jpg?v=1630122614" alt="picture">
+              </a>
+              <div class="picture__entry text-center">
+
+                <h3><a class="picture__link text-capitalize" href="#">health & <br> wellness</a></h3>
+                <span class="picture__line"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product" class="product">
+      <div class="container">
+        <div class="product__info d-flex align-items-center justify-content-between">
+          <h3 class="product__title product__seller text-capitalize">best seller</h3>
+          <a class="product__link text-capitalize" href="#">shop all <i class="fa fa-angle-double-right product__icon"
+              aria-hidden="true"></i></a>
+        </div>
+        <ul class="product__list pro col-12 d-flex">
+          <li class="pro__iteam col-lg-3">
+            <div class="pro__item">
+              <div class="pro__box">
+                <img
+                  src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/36-home_default/mug-today-is-a-good-day.jpg"
+                  alt="product-img">
+                <ul class="pro__list d-flex align-items-center justify-content-center">
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <i class='pro__bx bx bx-low-vision'></i>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content pro__modal">
+                          <div class="modal-header modal__header">
+                            <button type="button" class="btn-close modal__close" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="d-flex">
+                              <img class="modal__img"
+                                src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-large_default/mountain-fox-cushion.jpg"
+                                alt="modal-img" width="370" height="320">
+                              <img class="modal__small ms-3"
+                                src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-home_default/mountain-fox-cushion.jpg"
+                                alt="modal-img">
+                              <div class=" modal__info ms4">
+                                <h4 class="modal__desc m-0 p-0">PAMELA'S PRODUCTS ARTISAN BLEND FLOUR GLUTEN FREE</h4>
+                                <span class="modal__price d-inline-block">$11.90</span>
+                                <p class="modal__desc">White Ceramic Mug. 325ml</p>
+
+                                <input class="modal__input" type="number" name="number" placeholder="1">
+                                <a class="modal__link text-uppercase" href="#">add to card</a>
+                                <div class="modal__links d-flex">
+                                  <a class="modal__wish d-flex align-items-center" href="#"><i
+                                      class='bx modal__icon bx-heart'></i> Add to wishlist</a>
+                                  <a class="modal__wish d-flex align-items-center" href="#"><i
+                                      class='bx modal__icon bx-share-alt me-2'></i> Add to wishlist</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <ul class="modal__list">
+                              <li class="modal__item d-flex align-items-center">
+                                <h5 class="modal__share text-uppercase">share:</h5>
+                                <a href="#"><i class='bx modal__social bxl-facebook'></i></a>
+                                <a href="#"><i class='bx modal__social modal__social--second bxl-twitter'></i></a>
+                                <a href="#"><i class='bx modal__social modal__social--third bxl-pinterest-alt'></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </li>
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                      <i class='pro__bx bx bx-heart'></i>
+                    </button>
+                    <div class=" modal fade" id="exampleModalToggle" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header d-flex align-items-center">
+                            <p class="p-0 m-0 modal-text">You must be logged in to manage your wishlist</p>
+                            <button type="button" class="btn-close modal-ikon" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                      <i class='pro__bx bx bx-share-alt'></i>
+                    </button>
+                    <div class=" modal fade" id="exampleModalToggle" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header d-flex align-items-center">
+                            <p class="p-0 m-0 modal-text">You must be logged in to manage your wishlist</p>
+                            <button type="button" class="btn-close modal-ikon" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="pro__entry">
+                <span class="pro__home text-capitalize">home</span>
+                <h3 class="pro__title">
+                  <a class="pro__link" href="#">Grassfed Organic Turmeric Superghee</a>
+                </h3>
+                <span class="pro__coast">$22.00</span>
+                <span class="pro__line"></span>
+                <a class="pro__add text-uppercase" href="#">add to cart <i class="fa fa-angle-double-right pro__icon"
+                    aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="pro__iteam col-lg-3">
+            <div class="pro__item">
+              <div class="pro__box">
+                <img
+                  src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/35-home_default/mug-the-adventure-begins.jpg"
+                  alt="product-img">
+                <ul class="pro__list d-flex align-items-center justify-content-center">
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <i class='pro__bx bx bx-low-vision'></i>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content pro__modal">
+                          <div class="modal-header modal__header">
+                            <button type="button" class="btn-close modal__close" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="d-flex">
+                              <img class="modal__img"
+                                src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-large_default/mountain-fox-cushion.jpg"
+                                alt="modal-img" width="370" height="320">
+                              <img class="modal__small ms-3"
+                                src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-home_default/mountain-fox-cushion.jpg"
+                                alt="modal-img">
+                              <div class=" modal__info ms4">
+                                <h4 class="modal__desc m-0 p-0">PAMELA'S PRODUCTS ARTISAN BLEND FLOUR GLUTEN FREE</h4>
+                                <span class="modal__price d-inline-block">$11.90</span>
+                                <p class="modal__desc">White Ceramic Mug. 325ml</p>
+
+                                <input class="modal__input" type="number" name="number" placeholder="1">
+                                <a class="modal__link text-uppercase" href="#">add to card</a>
+                                <div class="modal__links d-flex">
+                                  <a class="modal__wish d-flex align-items-center" href="#"><i
+                                      class='bx modal__icon bx-heart'></i> Add to wishlist</a>
+                                  <a class="modal__wish d-flex align-items-center" href="#"><i
+                                      class='bx modal__icon bx-share-alt me-2'></i> Add to wishlist</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <ul class="modal__list">
+                              <li class="modal__item d-flex align-items-center">
+                                <h5 class="modal__share text-uppercase">share:</h5>
+                                <a href="#"><i class='bx modal__social bxl-facebook'></i></a>
+                                <a href="#"><i class='bx modal__social modal__social--second bxl-twitter'></i></a>
+                                <a href="#"><i class='bx modal__social modal__social--third bxl-pinterest-alt'></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </li>
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                      <i class='pro__bx bx bx-heart'></i>
+                    </button>
+                    <div class=" modal fade" id="exampleModalToggle" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header d-flex align-items-center">
+                            <p class="p-0 m-0 modal-text">You must be logged in to manage your wishlist</p>
+                            <button type="button" class="btn-close modal-ikon" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                      <i class='pro__bx bx bx-share-alt'></i>
+                    </button>
+                    <div class=" modal fade" id="exampleModalToggle" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header d-flex align-items-center">
+                            <p class="p-0 m-0 modal-text">You must be logged in to manage your wishlist</p>
+                            <button type="button" class="btn-close modal-ikon" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="pro__entry">
+                <span class="pro__home text-capitalize">home</span>
+                <h3 class="pro__title">
+                  <a class="pro__link" href="#">Grassfed Organic Turmeric Superghee</a>
+                </h3>
+                <span class="pro__coast">$22.00</span>
+                <span class="pro__line"></span>
+                <a class="pro__add text-uppercase" href="#">add to cart <i class="fa fa-angle-double-right pro__icon"
+                    aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="pro__iteam col-lg-3">
+            <div class="pro__item">
+              <div class="pro__box">
+                <img
+                  src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-home_default/mountain-fox-cushion.jpg"
+                  alt="product-img">
+                <ul class="pro__list d-flex align-items-center justify-content-center">
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <i class='pro__bx bx bx-low-vision'></i>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content pro__modal">
+                          <div class="modal-header modal__header">
+                            <button type="button" class="btn-close modal__close" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="d-flex">
+                              <img class="modal__img"
+                                src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-large_default/mountain-fox-cushion.jpg"
+                                alt="modal-img" width="370" height="320">
+                              <img class="modal__small ms-3"
+                                src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-home_default/mountain-fox-cushion.jpg"
+                                alt="modal-img">
+                              <div class=" modal__info ms4">
+                                <h4 class="modal__desc m-0 p-0">PAMELA'S PRODUCTS ARTISAN BLEND FLOUR GLUTEN FREE</h4>
+                                <span class="modal__price d-inline-block">$11.90</span>
+                                <p class="modal__desc">White Ceramic Mug. 325ml</p>
+
+                                <input class="modal__input" type="number" name="number" placeholder="1">
+                                <a class="modal__link text-uppercase" href="#">add to card</a>
+                                <div class="modal__links d-flex">
+                                  <a class="modal__wish d-flex align-items-center" href="#"><i
+                                      class='bx modal__icon bx-heart'></i> Add to wishlist</a>
+                                  <a class="modal__wish d-flex align-items-center" href="#"><i
+                                      class='bx modal__icon bx-share-alt me-2'></i> Add to wishlist</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <ul class="modal__list">
+                              <li class="modal__item d-flex align-items-center">
+                                <h5 class="modal__share text-uppercase">share:</h5>
+                                <a href="#"><i class='bx modal__social bxl-facebook'></i></a>
+                                <a href="#"><i class='bx modal__social modal__social--second bxl-twitter'></i></a>
+                                <a href="#"><i class='bx modal__social modal__social--third bxl-pinterest-alt'></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </li>
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                      <i class='pro__bx bx bx-heart'></i>
+                    </button>
+                    <div class=" modal fade" id="exampleModalToggle" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header d-flex align-items-center">
+                            <p class="p-0 m-0 modal-text">You must be logged in to manage your wishlist</p>
+                            <button type="button" class="btn-close modal-ikon" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                      <i class='pro__bx bx bx-share-alt'></i>
+                    </button>
+                    <div class=" modal fade" id="exampleModalToggle" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header d-flex align-items-center">
+                            <p class="p-0 m-0 modal-text">You must be logged in to manage your wishlist</p>
+                            <button type="button" class="btn-close modal-ikon" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="pro__entry">
+                <span class="pro__home text-capitalize">home</span>
+                <h3 class="pro__title">
+                  <a class="pro__link" href="#">Grassfed Organic Turmeric Superghee</a>
+                </h3>
+                <span class="pro__coast">$22.00</span>
+                <span class="pro__line"></span>
+                <a class="pro__add text-uppercase" href="#">add to cart <i class="fa fa-angle-double-right pro__icon"
+                    aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="pro__iteam col-lg-3">
+            <div class="pro__item">
+              <div class="pro__box">
+                <img
+                  src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/32-home_default/the-adventure-begins-framed-poster.jpg"
+                  alt="product-img">
+                <ul class="pro__list d-flex align-items-center justify-content-center">
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <i class='pro__bx bx bx-low-vision'></i>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content pro__modal">
+                          <div class="modal-header modal__header">
+                            <button type="button" class="btn-close modal__close" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="d-flex">
+                              <img class="modal__img"
+                                src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-large_default/mountain-fox-cushion.jpg"
+                                alt="modal-img" width="370" height="320">
+                              <img class="modal__small ms-3"
+                                src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-home_default/mountain-fox-cushion.jpg"
+                                alt="modal-img">
+                              <div class=" modal__info ms4">
+                                <h4 class="modal__desc m-0 p-0">PAMELA'S PRODUCTS ARTISAN BLEND FLOUR GLUTEN FREE</h4>
+                                <span class="modal__price d-inline-block">$11.90</span>
+                                <p class="modal__desc">White Ceramic Mug. 325ml</p>
+
+                                <input class="modal__input" type="number" name="number" placeholder="1">
+                                <a class="modal__link text-uppercase" href="#">add to card</a>
+                                <div class="modal__links d-flex">
+                                  <a class="modal__wish d-flex align-items-center" href="#"><i
+                                      class='bx modal__icon bx-heart'></i> Add to wishlist</a>
+                                  <a class="modal__wish d-flex align-items-center" href="#"><i
+                                      class='bx modal__icon bx-share-alt me-2'></i> Add to wishlist</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <ul class="modal__list">
+                              <li class="modal__item d-flex align-items-center">
+                                <h5 class="modal__share text-uppercase">share:</h5>
+                                <a href="#"><i class='bx modal__social bxl-facebook'></i></a>
+                                <a href="#"><i class='bx modal__social modal__social--second bxl-twitter'></i></a>
+                                <a href="#"><i class='bx modal__social modal__social--third bxl-pinterest-alt'></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </li>
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                      <i class='pro__bx bx bx-heart'></i>
+                    </button>
+                    <div class=" modal fade" id="exampleModalToggle" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header d-flex align-items-center">
+                            <p class="p-0 m-0 modal-text">You must be logged in to manage your wishlist</p>
+                            <button type="button" class="btn-close modal-ikon" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="pro__items">
+                    <button class="pro__btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                      <i class='pro__bx bx bx-share-alt'></i>
+                    </button>
+                    <div class=" modal fade" id="exampleModalToggle" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header d-flex align-items-center">
+                            <p class="p-0 m-0 modal-text">You must be logged in to manage your wishlist</p>
+                            <button type="button" class="btn-close modal-ikon" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="pro__entry">
+                <span class="pro__home text-capitalize">home</span>
+                <h3 class="pro__title">
+                  <a class="pro__link" href="#">Grassfed Organic Turmeric Superghee</a>
+                </h3>
+                <span class="pro__coast">$22.00</span>
+                <span class="pro__line"></span>
+                <a class="pro__add text-uppercase" href="#">add to cart <i class="fa fa-angle-double-right pro__icon"
+                    aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="pro__arrows">
+              <button class="pro__arrow">
+                <i class='pro__left bx bx-left-arrow-alt'></i>
+              </button>
+
+              <button class="pro__arrow">
+                <i class='pro__right bx bx-right-arrow-alt'></i>
+              </button>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section id="user" class="user">
+      <div class="container">
+        <div class="user__inner">
+          <ul class="user__list d-flex col-12 flex-wrap">
+            <li class="user__item col-sm-12 col-md-6 col-lg-6">
+              <div class="user__imgbox">
+                <img class="user__img"
+                  src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2_bn6.jpg?v=1630131658"
+                  alt="user-img">
+              </div>
+            </li>
+            <li class="user__item col-sm-12 col-md-6 col-lg-6">
+              <div class="user__entry">
+                <h3 class="user__title">A shop for good people by good people</h3>
+                <p class="user__text">Buy natural, sustainable and chemicalfree products from local sellers across the
+                  country.</p>
+                <p class="user__text">We are a strong community of 100,000+ customers and 600+ sellers who aspire to be
+                  good, do good, and spread goodness. We are a democratic, self-sustaining, two-sided marketplace which
+                  thrives on trust and is built on community and quality content.</p>
+                <a class="user__link text-capitalize" href="#">store location <i
+                    class="user__icon fa fa-angle-double-right" aria-hidden="true"></i></a>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="user__drops d-flex align-items-center col-12 flex-wrap">
+            <li class="user__drop col-sm-12 col-md-6 col-lg-6">
+              <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                    class="active carusel-btn" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"
+                    class="carusel-btn"></button>
+                  <button class="carusel-btn" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="user__customer">
+                      <h3 class="user__title">Why customer love us</h3>
+                      <p class="user__text">“I have been a regular customer in Freshio and the reason is I get a
+                        variety of organic products and it gives me many options to choose from and the Quality of the
+                        produce is good.”</p>
+                      <span class="user__store text-capitalize">pragya - bellandur store</span>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="user__customer">
+                      <h3 class="user__title">Why customer love us</h3>
+                      <p class="user__text">“I have been a regular customer in Freshio and the reason is I get a
+                        variety of organic products and it gives me many options to choose from and the Quality of the
+                        produce is good.”</p>
+                      <span class="user__store text-capitalize">pragya - bellandur store</span>
+
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="user__customer">
+                      <h3 class="user__title">Why customer love us</h3>
+                      <p class="user__text">“I have been a regular customer in Freshio and the reason is I get a
+                        variety of organic products and it gives me many options to choose from and the Quality of the
+                        produce is good.”</p>
+                      <span class="user__store text-capitalize">pragya - bellandur store</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                  data-bs-slide="prev">
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                  data-bs-slide="next">
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            </li>
+            <li class="col-sm-12 col-md-6 col-lg-6">
+              <div class="user__imgbox">
+                <img class="user__img"
+                  src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2_bn7.jpg?v=1630131658"
+                  alt="user-img">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="partners" class="partners">
+      <div class="container">
+        <ul class="partners__list d-flex align-items-center">
+          <li class="partners__item">
+            <a href="#">
+              <img class="partners__img"
+                src="https://demo73.leotheme.com/prestashop/at_freshio/img/m/1-manu_default.jpg" alt="partners-img">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a href="#">
+              <img class="partners__img"
+                src="https://demo73.leotheme.com/prestashop/at_freshio/img/m/3-manu_default.jpg" alt="partners-img">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a href="#">
+              <img class="partners__img"
+                src="https://demo73.leotheme.com/prestashop/at_freshio/img/m/2-manu_default.jpg" alt="partners-img">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a href="#">
+              <img class="partners__img"
+                src="https://demo73.leotheme.com/prestashop/at_freshio/img/m/4-manu_default.jpg" alt="partners-img">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a href="#">
+              <img class="partners__img"
+                src="https://demo73.leotheme.com/prestashop/at_freshio/img/m/5-manu_default.jpg" alt="partners-img">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a href="#">
+              <img class="partners__img"
+                src="https://demo73.leotheme.com/prestashop/at_freshio/img/m/6-manu_default.jpg" alt="partners-img">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <ul class="contact__list col-12 d-flex flex-wrap">
+          <li class="contact__item col-sm-12 col-md-6 col-lg-6">
+            <div class="contact__phone phone d-flex">
+              <div class="phone__imgbox">
+                <img class="phone__img" src="images/beates.png" alt="beates">
+              </div>
+              <div class="phone__entry">
+                <p class="phone__text text-capitalize">phone support</p>
+                <h4 class="phone__title text-uppercase">call us 24/7</h4>
+                <a class="phone__number" href="tel:123456789">(1800)-88-66-991</a>
+                <a class="phone__email" href="#">contact@example.com</a>
+              </div>
+            </div>
+          </li>
+          <li class="contact__item col-sm-12 col-md-6 col-lg-6">
+            <div class="contact__email message d-flex">
+              <div class="message__imgbox">
+                <img class="message__img" src="images/message.png" alt="message-img">
+              </div>
+              <div class="message__entry">
+                <p class="message__text text-capitalize">daily updates</p>
+                <h4 class="message__title text-uppercase">subscribe us</h4>
+                <p class="message__cost">Sign up and get a voucher of worth $250.00</p>
+                <div class="message__input">
+                  <input class="message__email" type="email" name="email" placeholder="Email address..." id="email"
+                    required>
+                  <button class="message__btn">
+                    <i class="message__icon fal fa-long-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer__inner d-flex justify-content-between flex-wrap">
+        <ul class="footer__store store">
+          <h4 class="footer__title">store location</h4>
+          <li class="store__item">
+            <p class="store__text">9066 Green Lake Drive Chevy<br>Chase, MD 20815</p>
+            <span class="store__date text-capitalize">monday - saturday:</span>
+            <p class="store__time">8:00 am - 4:00pm</p>
+            <span class="store__date text-capitalize">sunday:</span>
+            <p class="store__text">9:00 am - 5:00pm</p>
+          </li>
+        </ul>
+        <ul class="footer__inform inform">
+          <h4 class="footer__title">information</h4>
+          <li class="inform__item">
+            <a class="inform__link" href="#">about us</a>
+          </li>
+          <li class="inform__item">
+            <a class="inform__link" href="#">blog</a>
+          </li>
+          <li class="inform__item">
+            <a class="inform__link" href="#">check out</a>
+          </li>
+          <li class="inform__item">
+            <a class="inform__link" href="#">contact</a>
+          </li>
+          <li class="inform__item">
+            <a class="inform__link" href="#">service</a>
+          </li>
+        </ul>
+
+        <ul class="footer__inform inform">
+          <h4 class="footer__title">my account</h4>
+          <li class="inform__item">
+            <a class="inform__link" href="#">my account</a>
+          </li>
+          <li class="inform__item">
+            <a class="inform__link" href="#">contact</a>
+          </li>
+          <li class="inform__item">
+            <a class="inform__link" href="#">shopping cart</a>
+          </li>
+          <li class="inform__item">
+            <a class="inform__link" href="#">shop</a>
+          </li>
+        </ul>
+
+        <ul class="footer__inform inform">
+          <h4 class="footer__title">categories</h4>
+          <li class="inform__item">
+            <a class="inform__link" href="#">fruits & vegetables</a>
+          </li>
+          <li class="inform__item">
+            <a class="inform__link" href="#">dairy products</a>
+          </li>
+          <li class="inform__item">
+            <a class="inform__link" href="#">package foods</a>
+          </li>
+          <li class="inform__item">
+            <a class="inform__link" href="#">bevarage</a>
+          </li>
+          <li class="inform__item">
+            <a class="inform__link" href="#">bevarage</a>
+          </li>
+        </ul>
+
+        <div class="footer__inform">
+          <h4 class="footer__title">accept payment</h4>
+          <img class="footer__img"
+            src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2_payment.png?v=1630143530"
+            alt="footer-img">
+          <h4 class="footer__title">follow us</h4>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copy">
+    <div class="container">
+      <p class="copy__text text-capitalize">copyright © 2021 <span class="copy-fresh">Freshio</span>. all rights
+        reserved.</p>
+    </div>
+  </div>
+
+  <div class="icons">
+    <ul class="d-flex justify-content-between col-12 icons__list">
+
+      <li class="icons__item d-flex align-items-center justify-content-center col-3">
+        <div class="d-flex text-center flex-column">
+          <button class="icons__btn"><i class="icons__bx fal mb-1 fa-store"></i></button>
+          <a class="icons__link" href="#">Shop</a>
+        </div>
+      </li>
+
+      <li class="icons__item d-flex align-items-center justify-content-center col-3">
+        <div class="d-flex text-center flex-column">
+          <button class="icons__btn">
+            <i class='icons__bx bx icons__heart bx-heart'></i>
+          </button>
+          <a class="icons__link" href="#">wishlist</a>
+        </div>
+      </li>
+
+      <li class="icons__item d-flex align-items-center justify-content-center col-3">
+        <div class="d-flex text-center flex-column">
+          <button class="icons__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <i class='icons__bx bx bx-user'></i>
+          </button>
+          <a class="icons__link" href="#">Account</a>
+        </div>
+      </li>
+
+      <li class="icons__item d-flex align-items-center justify-content-center col-3">
+        <div class="d-flex text-center flex-column">
+          <button class="icons__btn">
+            <i class='icons__bx bx bx-search'></i>
+          </button>
+          <a class="icons__link" href="#">Search</a>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+  <a href="#"><i id="up" class='up bx bx-chevron-up'></i></a>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
